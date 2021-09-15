@@ -16,8 +16,9 @@ public class Three {
         int x = new Scanner(System.in).nextInt();
         int e = x%10; // единицы
         int d = x / 10 % 10;  // десятки
-        int summ = e+d; // сумма цифр
-        System.out.println("\nЕдиницы: " + e + "\nДесятки: " + d + "\nСумма всех цифр: " + summ);
+        int s = x / 100;
+        int summ = e+d+s; // сумма цифр
+        System.out.println("\nЕдиницы: " + e + "\nДесятки: " + d + "\nСотни: " + s + "\nСумма всех цифр: " + summ);
     }
     
 }
